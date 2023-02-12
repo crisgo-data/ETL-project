@@ -1,0 +1,17 @@
+SELECT 
+    Mes, 
+    Numero_Reclamaciones
+FROM (
+    SELECT 
+        EXTRACT(MONTH FROM "FECHA VUELO") AS Mes, 
+        COUNT(*) AS Numero_Reclamaciones
+    FROM 
+        demandas
+    GROUP BY 
+        Mes
+) AS meses_reclamaciones
+ORDER BY 
+    Numero_Reclamaciones DESC;
+
+
+--- QUERY PARA SABER EL MES QUE MAS SE HAN HECHO RECLAMACIONES A LAS AEROLINEAS

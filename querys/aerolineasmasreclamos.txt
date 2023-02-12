@@ -1,0 +1,7 @@
+SELECT aerolineas.ID_AEROLINEA, COUNT(reclamaciones.ID_RECLAMACIÓN) AS cantidad_reclamaciones
+FROM aerolineas
+JOIN reclamaciones ON aerolineas.ID_AEROLINEA = reclamaciones.ID_AEROLINEA
+GROUP BY aerolineas.ID_AEROLINEA
+ORDER BY cantidad_reclamaciones DESC;
+
+QUERY PARA VER LAS TRES PRIMERAS AEROLINEAS A LAS QUE SE LES RECLAMA Y CANTIDAD DE RECLAMOS.

@@ -1,0 +1,6 @@
+SELECT 
+    (COUNT(CASE WHEN ESTADO = 'Cobrado' THEN 1 END) / COUNT(*) * 100) AS Porcentaje_Cobrado
+FROM 
+    demandas;
+
+--- Esta Query nos dice el porcentaje de demandas que han sido cobradas.
