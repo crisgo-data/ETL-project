@@ -24,9 +24,9 @@ INDICE
 
 <h1 align="center"> DESCRIPCIÓN DEL PROYECTO </h1>
 
-Se trata de un proyecto en el cual se nos pide que primero extraigamos datos de tres fuentes diferentes, usando dos métodos distintos de extraccíon, en segundo lugar que hagamos una limpieza y transformación de esos datos conseguidos, y por último carguemos esos dtos a una BDD SQL. 
+Se trata de un proyecto en el cual se nos pide que primero extraigamos datos de tres fuentes diferentes, usando dos métodos distintos de extraccíon, en segundo lugar que hagamos una limpieza y transformación de esos datos conseguidos, y por último carguemos esos datos a una BDD SQL. 
 
-Este proyecto está enfocado a una empresa de que hace reclamaciones a las aerolineas por retrasos en sus vuelos con orígen o destino Madrid y Barcelona.
+Este proyecto está enfocado a una empresa que realiza demandas a las aerolineas por retrasos en sus vuelos con orígen o destino Madrid y Barcelona.
 
 
 
@@ -83,15 +83,21 @@ La tabla de derechos está al margen ya que de momento no tiene datos suficiente
 Después de terminar la carga en los datos, hemos realizado las consultas, para mi más importantes, que nos aporten una información global del negocio:
 
 
-1- Las tres aerolineas que mas demandas reciben son:     1- Vueling      2610 demandas
-                                                         2- Air Europa   1956 demandas
-                                                         3- Iberia       1099 demandas
+1- Las tres aerolineas que mas demandas reciben son:     
+    - Vueling      2610 demandas
+    - Air Europa   1956 demandas
+    - Iberia       1099 demandas
 
 
-2- Los meses del año en que más reclamaciones hay:       1- Septiembre   9322 reclamaciones
-                                                         2- Agosto       3317 reclamaciones
+2- Los meses del año en que más reclamaciones hay:       
 
-3- Porcentaje de Demandas que se han cobrado:            % de demandas Cobradas 26,92%
+    - Septiembre   9322 reclamaciones
+    - Agosto       3317 reclamaciones
+
+3- Porcentaje de Demandas que se han cobrado:            
+
+
+% de demandas Cobradas 26,92%
 
 
 
