@@ -4,21 +4,21 @@
 <h1 align="center"> PROYECTO ETL (EXTRACCIÓN, TRANSFORMACIÓN Y CARGA DE DATOS) </h1>
 
 
-##Índice
+INDICE
 
-*[ETL RETRASOS AÉREOS](#ETL-retrasos-aéreos)
+1-[ETL RETRASOS AÉREOS](#ETL-retrasos-aéreos)
 
-*[Índice](#índice)
+2-[Índice](#índice)
 
-*[Descripción del proyecto](#descripción-del-proyecto)
+3-[Descripción del proyecto](#descripción-del-proyecto)
 
-*[Extracción de los datos](#Extracción-de-los-datos)
+4-[Extracción de los datos](#Extracción-de-los-datos)
 
-*[Limpieza y transformación de los Datos](#Limpieza-y-transformación-de-los-datos)
+5-[Limpieza y transformación de los Datos](#Limpieza-y-transformación-de-los-datos)
 
-*[Carga de Datos a SQL](#Carga-de-datos-a-SQL)
+6-[Carga de Datos a SQL](#Carga-de-datos-a-SQL)
 
-*[Análisis y coclusión](#análisis)
+7-[Análisis y coclusión](#análisis)
 
 
 
@@ -32,15 +32,15 @@ Este proyecto está enfocado a una empresa de que hace reclamaciones a las aerol
 
 <h1 align="center"> Extracción de los datos </h1>
 
-*[Primera fuente](#Primera fuente): En primer lugar, cuento con dos hojas de cálculo de excel proporcionadas por la propia compañía.
+- [Primera fuente]: En primer lugar, cuento con dos hojas de cálculo de excel proporcionadas por la propia compañía.
 
-*[Segunda fuente](#Segunda fuente): 'https://www.aeropuertoinfo.com/info-sobre-vuelos/lista-de-aerolineas-en-europa/' De esta fuente he sacado mi tabla 'aerolineas' la cual me proporciona el código IATA de cada una de ellas el cual normalmente viene en el nombre del vuelo.
+- [Segunda fuente]: 'https://www.aeropuertoinfo.com/info-sobre-vuelos/lista-de-aerolineas-en-europa/' De esta fuente he sacado mi tabla 'aerolineas' la cual me proporciona el código IATA de cada una de ellas el cual normalmente viene en el nombre del vuelo.
 
 ![tabla aerolineas ](https://github.com/crisgo-data/ETL-project/blob/main/imagenes/aerolineas.JPG)
 
 
 
-*[Tercera fuente](#Tercera fuente): 'https://www.seguridadaerea.gob.es/es/ambitos/derechos-de-los-pasajeros/retrasos' De esta fuente saco mi cuarta tabla 'derechos'. Esta me proporciona información de los derechos de atención según la distancia del vuelo y su tiempo de retraso.
+- [Tercera fuente]: 'https://www.seguridadaerea.gob.es/es/ambitos/derechos-de-los-pasajeros/retrasos' De esta fuente saco mi cuarta tabla 'derechos'. Esta me proporciona información de los derechos de atención según la distancia del vuelo y su tiempo de retraso.
 
 ![tabla derechos ](https://github.com/crisgo-data/ETL-project/blob/main/imagenes/derechos.JPG)
 
@@ -83,19 +83,20 @@ La tabla de derechos está al margen ya que de momento no tiene datos suficiente
 Después de terminar la carga en los datos, hemos realizado las consultas, para mi más importantes, que nos aporten una información global del negocio:
 
 
-1- Las tres aerolineas que mas reclamos reciben son: 
-![top3 ](https://github.com/crisgo-data/ETL-project/blob/main/imagenes/aerolineasdemandas.jpg)
-
-2- Los meses del año en que más reclamaciones hay:
-![meses ](https://github.com/crisgo-data/ETL-project/blob/main/imagenes/mesreclamaciones.jpg)
-
-3- Porcentaje de Demandas que se han cobrado:
-
-![porcentaje ](https://github.com/crisgo-data/ETL-project/blob/main/imagenes/cobradas.jpg)
+1- Las tres aerolineas que mas demandas reciben son:     1- Vueling      2610 demandas
+                                                         2- Air Europa   1956 demandas
+                                                         3- Iberia       1099 demandas
 
 
+2- Los meses del año en que más reclamaciones hay:       1- Septiembre   9322 reclamaciones
+                                                         2- Agosto       3317 reclamaciones
 
-Pueden seguir añadiendose variables y columnas a esta base de datos, por ejemplo el tiempo que hizo cada uno de los días de la reclamación, o la compensación económica según la distancia del vuelo. De esa manera podríamos realizar muchas mas consultas a la BDD. 
+3- Porcentaje de Demandas que se han cobrado:            % de demandas Cobradas 26,92%
+
+
+
+
+Se puedenseguir añadiendo variables y columnas a esta base de datos, por ejemplo el tiempo que hizo cada uno de los días de la reclamación, o la compensación económica según la distancia del vuelo. De esa manera podríamos realizar muchas mas consultas a la BDD. 
 Esto lo haré para el proyecto final.
 
 Si teneis retrasos en los vuelos mayores a un par de horas, con orígen o destino Madrid o Barcelona os dejo en enlace a la web de #LegalSky
